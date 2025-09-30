@@ -313,7 +313,7 @@ function checkIfSongExists() {
 
     // TODO: Use .includes() to check if song exists
     // MDN Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
-    let exists = // Your code here - use mySongs.includes(searchTerm)
+    let exists = mySongs.includes("Guilt Trip", "Reservoir", "Mabu", "Never Try", "Yukon", "lionheart", "Dark Days");// Your code here - use mySongs.includes(searchTerm)
 
     // TODO: Show appropriate message
     if (exists) {
@@ -343,7 +343,7 @@ function getTopThreeSongs() {
     // TODO: Use destructuring to get first three songs
     // MDN Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#array_destructuring
     // HINT: let [first, second, third] = mySongs;
-    let [first, second, third] = // Your code here
+    let [first, second, third] = mySongs;// Your code here
 
     showMessage("✅ Top 3 songs using destructuring: 1) " + first + " 2) " + second + " 3) " + third);
 }
@@ -357,7 +357,7 @@ function separateFirstSong() {
 
     // TODO: Use destructuring to get first song and rest
     // HINT: let [first, ...others] = mySongs;
-    let [first, ...others] = // Your code here
+    let [first, ...others] = mySongs;// Your code here
 
     showMessage("✅ First song: '" + first + "', Other songs: " + others.length + " using destructuring!");
 }
